@@ -1,0 +1,173 @@
+{
+  "brand": {
+    "name": "Sahara",
+    "tagline": "Build. Rebuild. Automate.",
+    "summary": "A product engineering portfolio for teams that build, modernize, and automate digital systems with practical AI."
+  },
+  "sectors": [
+    "Technology",
+    "General Business",
+    "Consulting",
+    "Finance"
+  ],
+  "capabilities": [
+    {
+      "name": "Product Discovery",
+      "description": "Convert rough ideas into structured PRDs, scope, user stories, and launch plans."
+    },
+    {
+      "name": "Product Rebuilding",
+      "description": "Audit existing systems, identify technical debt, and plan modernization paths."
+    },
+    {
+      "name": "Workflow Automation",
+      "description": "Turn documents, briefs, and operational notes into summaries, risks, and tasks."
+    },
+    {
+      "name": "AI Enablement",
+      "description": "Add source-grounded assistants, structured generation, retrieval, and review flows."
+    }
+  ],
+  "suiteModules": [
+    {
+      "name": "AI Capability Portfolio Platform",
+      "anchor": "work",
+      "status": "Interactive",
+      "prdCoverage": ["Landing page", "Team portfolio", "Project filtering", "Case studies", "Portfolio assistant", "Admin CMS controls"]
+    },
+    {
+      "name": "Product Audit and Rebuild Planner",
+      "anchor": "audit",
+      "status": "Interactive demo",
+      "prdCoverage": ["Product intake", "Health score", "Recommendation", "Risk matrix", "Modernization roadmap", "Markdown export"]
+    },
+    {
+      "name": "MVP Builder and Product Launch Kit",
+      "anchor": "mvp",
+      "status": "Interactive demo",
+      "prdCoverage": ["Idea wizard", "PRD generator", "MVP scope", "Feature priority", "User stories", "Launch checklist"]
+    },
+    {
+      "name": "AI Document and Workflow Automation Platform",
+      "anchor": "documents",
+      "status": "Interactive demo",
+      "prdCoverage": ["Document input", "Summary", "Q&A", "Risk extraction", "Task extraction", "Review and approval"]
+    }
+  ],
+  "teamMembers": [
+    {
+      "name": "Aarav Mehta",
+      "slug": "aarav-mehta",
+      "role": "Product Engineering Lead",
+      "summary": "Leads product architecture, delivery planning, and rebuild strategy across portfolio modules.",
+      "skills": ["Product Architecture", "Backend Systems", "AI Workflows"],
+      "ownedModules": ["Product Audit Planner", "Shared Platform"]
+    },
+    {
+      "name": "Maya Rao",
+      "slug": "maya-rao",
+      "role": "AI Workflow Designer",
+      "summary": "Designs prompt templates, output schemas, review flows, and source-grounded assistant behavior.",
+      "skills": ["Prompt Systems", "Document Intelligence", "Evaluation"],
+      "ownedModules": ["Portfolio Assistant", "Document Workflow"]
+    },
+    {
+      "name": "Neil Shah",
+      "slug": "neil-shah",
+      "role": "Frontend and Experience Engineer",
+      "summary": "Builds warm, usable interfaces for product discovery, portfolio browsing, and generated reports.",
+      "skills": ["Design Systems", "React", "Report UI"],
+      "ownedModules": ["Portfolio Platform", "MVP Builder"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI Capability Portfolio Platform",
+      "slug": "ai-capability-portfolio-platform",
+      "status": "In Progress",
+      "featured": true,
+      "sectors": ["Technology", "Consulting", "General Business"],
+      "capabilities": ["AI Enablement", "Product Discovery"],
+      "problem": "Static portfolios do not help prospects quickly connect team skills, proof, and relevant sample work.",
+      "solution": "A public portfolio and assistant that maps sectors, capabilities, team ownership, and case studies.",
+      "features": ["Public landing page", "Team profiles", "Project case studies", "Approved-content assistant"],
+      "stack": ["Web UI", "Portfolio CMS", "Retrieval", "Structured AI outputs"],
+      "impact": "Reduces pitch explanation time by making proof discoverable through filters and assistant answers.",
+      "approvedForAI": true
+    },
+    {
+      "title": "Product Audit and Rebuild Planner",
+      "slug": "product-audit-and-rebuild-planner",
+      "status": "Planned",
+      "featured": true,
+      "sectors": ["Technology", "Finance", "General Business"],
+      "capabilities": ["Product Rebuilding", "AI Enablement"],
+      "problem": "Businesses with legacy systems struggle to decide whether to improve, refactor, rebuild, migrate, or retire.",
+      "solution": "A guided intake that produces a product health score, risk matrix, recommendation, and modernization roadmap.",
+      "features": ["Audit intake", "Health score", "Rebuild recommendation", "Roadmap export"],
+      "stack": ["Backend API", "Rules engine", "AI report generation", "Markdown export"],
+      "impact": "Creates a structured modernization plan that supports consulting and technical decision-making.",
+      "approvedForAI": true
+    },
+    {
+      "title": "MVP Builder and Product Launch Kit",
+      "slug": "mvp-builder-and-product-launch-kit",
+      "status": "Planned",
+      "featured": true,
+      "sectors": ["Technology", "Consulting", "General Business"],
+      "capabilities": ["Product Discovery", "AI Enablement"],
+      "problem": "Raw product ideas often reach development without clear scope, user stories, flows, or launch readiness.",
+      "solution": "An idea wizard that generates a PRD, MVP scope, feature priorities, user stories, and launch checklist.",
+      "features": ["Idea intake", "PRD generator", "Feature prioritization", "Launch checklist"],
+      "stack": ["Wizard UI", "Prompt templates", "Output schemas", "Export service"],
+      "impact": "Turns early product thinking into development-ready planning artifacts.",
+      "approvedForAI": true
+    },
+    {
+      "title": "AI Document and Workflow Automation Platform",
+      "slug": "ai-document-and-workflow-automation-platform",
+      "status": "Planned",
+      "featured": false,
+      "sectors": ["Finance", "Consulting", "General Business"],
+      "capabilities": ["Workflow Automation", "AI Enablement"],
+      "problem": "Document-heavy teams miss risks, deadlines, and action items because review is manual and repetitive.",
+      "solution": "A document workspace that extracts summaries, risks, obligations, Q&A answers, and draft tasks for approval.",
+      "features": ["Document upload", "Summary generation", "Document Q&A", "Task extraction"],
+      "stack": ["File parsing", "Chunking", "Retrieval", "Task review"],
+      "impact": "Reduces manual review effort while keeping users in control of final tasks and outputs.",
+      "approvedForAI": true
+    }
+  ],
+  "assistantSuggestions": [
+    "Which projects are relevant for finance?",
+    "Who works on AI workflows?",
+    "Show me rebuilding capability.",
+    "What can this team build for consultants?"
+  ],
+  "adminControls": [
+    {
+      "name": "Portfolio CMS",
+      "description": "Manage team members, skills, projects, case studies, screenshots, contribution mappings, featured records, and AI-approved content."
+    },
+    {
+      "name": "Template Management",
+      "description": "Version prompt templates, report templates, export templates, active states, archived states, and sample test inputs."
+    },
+    {
+      "name": "Authentication and Roles",
+      "description": "Represent public visitor, registered user, admin, and super admin access boundaries from the PRD."
+    },
+    {
+      "name": "AI Safety and Reliability",
+      "description": "Show source-grounded answers, editable generated outputs, missing-information notes, unsupported-claim handling, and output schema intent."
+    },
+    {
+      "name": "File and Export Handling",
+      "description": "Prepare upload validation, private documents, retention controls, markdown export, and future PDF/DOCX/CSV/JSON export paths."
+    },
+    {
+      "name": "Audit Logs and Observability",
+      "description": "Track login, upload, delete, generation, export, admin updates, task approval, failures, and permission denials."
+    }
+  ]
+}

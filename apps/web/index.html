@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sahara Product Engineering Portfolio</title>
+    <meta name="description" content="AI-enabled product engineering portfolio suite.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Sahara home">Sahara</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+        <a href="#audit">Audit</a>
+        <a href="#mvp">MVP</a>
+        <a href="#documents">Docs</a>
+        <a href="#assistant">Assistant</a>
+        <a href="#admin">Admin</a>
+        <a href="#plan">Plan</a>
+      </nav>
+      <a class="button button-primary" href="#assistant">Ask Portfolio</a>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="eyebrow">AI Capability Portfolio</div>
+        <h1>Build. Rebuild. <span>Automate.</span></h1>
+        <p class="hero-copy">
+          A working portfolio suite for product discovery, modernization planning,
+          workflow automation, and source-grounded AI enablement.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore Capabilities</a>
+          <a class="button button-secondary" href="#plan">View Phase Plan</a>
+        </div>
+        <div id="capability-grid" class="capability-grid" aria-label="Capability categories"></div>
+      </section>
+
+      <section id="suite" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Suite Coverage</p>
+            <h2>Every PRD product has a demo path</h2>
+          </div>
+          <p class="section-note">These modules are wired as local deterministic demos now, with clear upgrade paths into real API, storage, queue, and AI orchestration services.</p>
+        </div>
+        <div id="suite-grid" class="suite-grid"></div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selected Work</p>
+            <h2>Product suite modules</h2>
+          </div>
+          <label class="search">
+            <span>Search</span>
+            <input id="project-search" type="search" placeholder="Search projects, sectors, capabilities">
+          </label>
+        </div>
+        <div id="sector-filters" class="filter-row" aria-label="Project sector filters"></div>
+        <div id="project-grid" class="project-grid"></div>
+      </section>
+
+      <section id="studio" class="section studio">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Studio</p>
+            <h2>Team and capability map</h2>
+          </div>
+          <p class="section-note">Profiles connect people to owned modules, proof areas, and assistant sources.</p>
+        </div>
+        <div id="team-grid" class="team-grid"></div>
+        <div id="matrix-grid" class="matrix-grid"></div>
+      </section>
+
+      <section id="audit" class="section tool-section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Product Audit and Rebuild Planner</p>
+            <h2>Audit an existing product</h2>
+          </div>
+          <p class="section-note">Covers intake, health score, rebuild recommendation, risk matrix, roadmap, assumptions, and markdown-ready export.</p>
+        </div>
+        <div class="tool-layout">
+          <form id="audit-form" class="tool-form">
+            <label>Product description<textarea name="description" required>Legacy finance reporting portal used by operations teams to review monthly files, approvals, and exception notes.</textarea></label>
+            <label>Current stack<input name="stack" value="PHP, MySQL, shared hosting, spreadsheet exports"></label>
+            <label>Pain points<textarea name="painPoints">Slow reports, manual approvals, weak audit trail, unclear ownership, difficult deployments.</textarea></label>
+            <label>Business goals<textarea name="goals">Improve reliability, reduce manual review, add role-based workflows, and prepare for secure document automation.</textarea></label>
+            <button class="button button-primary" type="submit">Generate Audit Report</button>
+          </form>
+          <article id="audit-output" class="report-card"></article>
+        </div>
+      </section>
+
+      <section id="mvp" class="section tool-section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">MVP Builder and Product Launch Kit</p>
+            <h2>Turn an idea into a launch plan</h2>
+          </div>
+          <p class="section-note">Covers idea intake, PRD generation, MVP scope, feature prioritization, user stories, blueprint, sprint plan, launch checklist, and export.</p>
+        </div>
+        <div class="tool-layout">
+          <form id="mvp-form" class="tool-form">
+            <label>Product idea<textarea name="idea" required>A consulting brief assistant that converts client discovery notes into proposals, risks, tasks, and delivery plans.</textarea></label>
+            <label>Target sector<input name="sector" value="Consulting"></label>
+            <label>Must-have features<textarea name="features">Brief intake, PRD draft, user stories, risk list, task checklist, markdown export.</textarea></label>
+            <label>Constraints<textarea name="constraints">Small launch budget, private client notes, needs editable outputs before sharing.</textarea></label>
+            <button class="button button-primary" type="submit">Generate MVP Kit</button>
+          </form>
+          <article id="mvp-output" class="report-card"></article>
+        </div>
+      </section>
+
+      <section id="documents" class="section tool-section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">AI Document and Workflow Automation</p>
+            <h2>Extract insight and draft tasks</h2>
+          </div>
+          <p class="section-note">Covers upload/paste input, summary, Q&A behavior, risks, obligations, draft task extraction, review, approval, source references, and exports.</p>
+        </div>
+        <div class="tool-layout">
+          <form id="document-form" class="tool-form">
+            <label>Document or notes<textarea name="documentText" required>Client asks for a product audit by July 18. Finance reports are manually reviewed every month. Approval delays cause missed deadlines. Operations lead should provide sample files. Security review is required before uploading sensitive documents.</textarea></label>
+            <label>Question<input name="question" value="What are the risks and next actions?"></label>
+            <button class="button button-primary" type="submit">Analyze Document</button>
+          </form>
+          <article id="document-output" class="report-card"></article>
+        </div>
+      </section>
+
+      <section id="assistant" class="section assistant-section">
+        <div class="assistant-layout">
+          <div>
+            <p class="kicker">Portfolio Assistant</p>
+            <h2>Ask from approved portfolio content</h2>
+            <p class="section-note">
+              Phase 1 uses deterministic local retrieval over approved seed records.
+              The production version will connect this pattern to the AI orchestration module.
+            </p>
+            <form id="assistant-form" class="assistant-form">
+              <label for="assistant-query">Question</label>
+              <div class="query-row">
+                <input id="assistant-query" type="text" autocomplete="off" placeholder="Which projects are relevant for finance?">
+                <button class="button button-primary" type="submit">Ask</button>
+              </div>
+            </form>
+            <div id="suggestions" class="suggestions"></div>
+          </div>
+          <article id="assistant-answer" class="answer-card" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="admin" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Admin and Shared Platform</p>
+            <h2>Controls required by the PRD</h2>
+          </div>
+          <p class="section-note">Visible controls for CMS, prompt templates, roles, exports, privacy, audit logs, and AI safety. These are mock-managed in Phase 1 and ready for backend wiring.</p>
+        </div>
+        <div id="admin-grid" class="admin-grid"></div>
+      </section>
+
+      <section id="plan" class="section plan-section">
+        <p class="kicker">Phase Plan</p>
+        <h2>Build path</h2>
+        <div class="phase-list">
+          <article>
+            <strong>Phase 1</strong>
+            <span>Foundation, seed data, public portfolio shell.</span>
+          </article>
+          <article>
+            <strong>Phase 2</strong>
+            <span>Framework scaffold, routes, reusable UI components.</span>
+          </article>
+          <article>
+            <strong>Phase 3</strong>
+            <span>Backend API, auth, data persistence, admin foundation.</span>
+          </article>
+          <article>
+            <strong>Phase 4</strong>
+            <span>Portfolio assistant retrieval, AI gateway, guardrails.</span>
+          </article>
+          <article>
+            <strong>Phase 5</strong>
+            <span>Convert local demo generators into backend AI workflows.</span>
+          </article>
+          <article>
+            <strong>Phase 6</strong>
+            <span>Deployment, seeded demos, QA, exports, and public readiness.</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Sahara</span>
+      <span>Phase 1 foundation build</span>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

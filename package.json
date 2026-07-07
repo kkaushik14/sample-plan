@@ -1,0 +1,11 @@
+{
+  "name": "ai-product-engineering-portfolio-suite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phase-based build for an AI-enabled product engineering portfolio suite.",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "verify": "node tools/verify-static-app.mjs",
+    "test": "npm run verify"
+  }
+}
