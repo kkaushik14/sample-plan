@@ -28,6 +28,8 @@ Then open:
 http://localhost:5173/apps/web/
 ```
 
+The local server is a dependency-free Node.js server in `server.mjs`. It serves the static app, seed data, `/health`, and the first public portfolio API-style endpoint at `/api/public/portfolio/home`.
+
 ## Verify
 
 ```bash
@@ -40,6 +42,7 @@ npm run verify
 apps/web/              Public suite demo shell
 data/                  Seed data for demo and future API work
 docs/                  Execution, design, ADR, and versioned source docs
+server.mjs             Dependency-free Node.js local server
 tools/                 Lightweight verification scripts
 ```
 

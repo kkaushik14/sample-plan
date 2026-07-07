@@ -5,6 +5,7 @@ const requiredFiles = [
   "apps/web/styles.css",
   "apps/web/app.js",
   "data/portfolio.seed.json",
+  "server.mjs",
   "docs/EXECUTION_PLAN_v1.0.md",
   "docs/UI_DESIGN_DOCUMENT_v0.1.md",
   "docs/adr/0001-phase-1-stack.md",
@@ -74,6 +75,18 @@ const appJs = await assertFile("apps/web/app.js");
 for (const workflow of ["generateAuditReport", "generateMvpKit", "analyzeDocument", "answerQuestion"]) {
   if (!appJs.includes(workflow)) {
     throw new Error(`apps/web/app.js is missing workflow: ${workflow}`);
+  }
+}
+
+const packageJson = JSON.parse(await assertFile("package.json"));
+if (packageJson.scripts?.dev !== "node server.mjs") {
+  throw new Error("package.json dev script must run the Node.js server");
+}
+
+const server = await assertFile("server.mjs");
+for (const marker of ["createServer", "/health", "/api/public/portfolio/home", "serveStatic"]) {
+  if (!server.includes(marker)) {
+    throw new Error(`server.mjs is missing ${marker}`);
   }
 }
 
