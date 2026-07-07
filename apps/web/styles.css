@@ -8,17 +8,13 @@
   --text: #2d2520;
   --muted: #71655d;
   --border: #ded3c8;
-  --shadow: 0 2px 16px rgba(58, 48, 42, 0.05);
+  --shadow: 0 1px 6px rgba(58, 48, 42, 0.04);
   --radius: 8px;
   color-scheme: light;
 }
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -47,9 +43,8 @@ input {
   align-items: center;
   gap: 24px;
   padding: 16px 32px;
-  background: rgba(250, 245, 238, 0.92);
+  background: #faf5ee;
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(12px);
 }
 
 .brand,
@@ -91,7 +86,6 @@ input {
   gap: 24px;
 }
 
-.eyebrow,
 .kicker {
   display: inline-flex;
   align-items: center;
